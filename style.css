@@ -6,7 +6,7 @@ body {
 	padding: 0px;
 	box-sizing: border-box;
 	font-family: 'PT Sans', sans-serif;
-	width: 100vw;
+	width: 214vh;
 	/* font-size:20px; */
 	display: flex;
 	flex-direction: column;
@@ -15,13 +15,14 @@ body {
 	/* align-items: stretch; */
 	justify-content: center;
 	justify-content: space-around;
+	font-size:1.5vw;
 
 
 }
 
 .container-fluid {
 	height: 90vh;
-	width: 100vw;
+	width: 213vh;
 	position: relative;
 	background: rgba(248, 248, 248, 0.5);
 
@@ -40,11 +41,11 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
-	opacity: 0.1;
+	opacity: 0.3;
 	z-index: -10;
 }
 
-
+/* media1 */
 .navbar {
 
 	display: flex;
@@ -98,6 +99,15 @@ body {
 	text-decoration: none;
 
 
+}
+
+.nav_menu .iconBar {
+	visibility: hidden;
+
+}
+
+.nav_menu {
+	overflow: hidden;
 }
 
 .icons a img:hover {
@@ -250,9 +260,9 @@ th.table-header {
 /* ;transform:rotateY(60deg) */
 
 
-
+/* media2 */
 .container-fluid1 {
-	width: 100%;
+	width: 213vh;
 	height: 180vh;
 	position: relative;
 	/* z-index: -1; */
@@ -266,7 +276,7 @@ th.table-header {
 
 .container-fluid1::after {
 	content: '';
-	width: 100%;
+	width: 213vh;
 	height: 180vh;
 	position: absolute;
 	top: 0vh;
@@ -445,7 +455,7 @@ th.table-header {
 
 
 .container-fluid2 {
-	width: 100%;
+	width: 213vh;
 	height: 180vh;
 	position: relative;
 	background: rgba(255, 255, 255, 0.274);
@@ -457,7 +467,7 @@ th.table-header {
 
 .container-fluid2::after {
 	content: '';
-	width: 100%;
+	width: 213vh;
 	height: 180vh;
 	position: absolute;
 	top: 0vh;
@@ -560,18 +570,18 @@ th.table-header {
 
 .flex-items2::before {
 	content: '';
-	position: relative;
+	position: absolute;
 
-	z-index: 10200;
+	z-index: 1000;
 	background-color: rgb(42, 42, 190);
-	margin: 5vh;
+	/* margin: 5vh; */
 	border-radius: 3vh;
 	width: 7vh;
 	height: 39vh;
 	position: absolute;
 	opacity: 1;
-	top: -7vh;
-	left: 65vh
+	/* top: -7vh; */
+	/* left:  */
 }
 
 #date {
@@ -618,10 +628,10 @@ th.table-header {
 	left: 56vh;
 	border-radius: 5vh;
 	box-shadow: 1px 1px 19px 1px black;
-	background-image: url('images/i-frame1.jpg');
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size: cover;
+	background-image: url('images/i-frame.jpg');
+	/* background-repeat: no-repeat; */
+	/* background-attachment: scroll; */
+	background-size: contain;
 	border: 1px solid rgba(0, 0, 0, 0.124);
 }
 
@@ -660,7 +670,7 @@ th.table-header {
 
 .container3::after {
 	content: '';
-	width: 100%;
+	width: 213vh;
 	height: 180vh;
 	position: absolute;
 	top: 0vh;
@@ -684,7 +694,11 @@ th.table-header {
 	justify-content: center;
 	position: relative;
 	top: -15vh;
+<<<<<<< Updated upstream
 	left: 34vh;
+=======
+	left: 30vh;
+>>>>>>> Stashed changes
 	height: 140vh;
 	width: 180vh;
 	background-color: rgb(20, 35, 201);
@@ -996,4 +1010,134 @@ th.table-header {
 	/* position: relative; */
 	z-index: 1000;
 	list-style: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.nav_menu a {
+		display: none;
+	}
+
+	.nav_menu .iconBar {
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.nav_menu .iconBar {
+		visibility: visible;
+	}
+
+
+	.nav_menu.responsive {
+		position: relative;
+	}
+
+	.nav_menu.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.nav_menu.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.content-domain {
+		position: relative;
+	}
+
+	.container-fluid {
+		height: 90vh;
+		width: 100vh;
+		position: relative;
+		background: rgba(248, 248, 248, 0.5);
+
+	}
+
+	.content-My-info {
+		height: 70vh;
+		width: 100vh;
+		position: absolute;
+		top: 100px;
+		/* left:95%; */
+		background-image: url('images/content-info.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		border-radius: 10vh;
+		margin: 40px;
+		margin-left: 30;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 1px 1px 20px 3px rgba(16, 16, 16, 0.692);
+
+		justify-content: space-around;
+		z-index: 1000;
+	}
+
+	.info-table {
+		position: relative;
+		left: 16 vh;
+		top: -8vh;
+		width: 100vh;
+
+	}
+
+	.content-My-info::after {
+		content: '';
+		height: 40vh;
+		width: 40vh;
+		position: absolute;
+		top: 0vh;
+		left: 20vh;
+		border-radius: 50%;
+
+	}
+
+	.container-fluid1 {
+		width: 100vh;
+		height: 180vh;
+		position: relative;
+		/* z-index: -1; */
+		font-size: 2vh;
+		/* background: url('images/b2.jpg'); */
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		/* background: linear-gradient(to left, rgba(128, 45, 166, 0.316), rgba(27, 130, 226, 0.356)); */
+	}
+
+	.container-fluid1::after {
+		content: '';
+		width: 100vh;
+		height: 180vh;
+		position: absolute;
+		top: 0vh;
+		opacity: 0.7;
+		z-index: -2;
+		font-size: 2vh;
+		background: url('images/b3.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		/* background: linear-gradient(to left, rgba(128, 45, 166, 0.316), rgba(27, 130, 226, 0.356)); */
+	}
+
 }
